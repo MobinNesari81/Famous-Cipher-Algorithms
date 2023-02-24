@@ -94,4 +94,4 @@ print(decrypted_text)
 ```
 
 ## License
-MIT
+This repository is under the MIT license.
