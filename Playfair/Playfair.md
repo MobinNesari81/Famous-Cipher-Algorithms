@@ -1,5 +1,7 @@
 # Playfair Cipher
 
+__Designer and Developer:__ Mobin Nesari
+
 The Playfair Cipher is a polygraphic substitution cipher that encrypts pairs of letters, known as bigrams, instead of single letters, unlike traditional substitution ciphers. This cipher was used extensively in the Second Boer War and both World War I and World War II.
 
 ## What is the Playfair Cipher?
