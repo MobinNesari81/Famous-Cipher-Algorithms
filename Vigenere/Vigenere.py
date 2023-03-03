@@ -50,12 +50,3 @@ class VigenereCipher:
                 plaintext += letter
         return plaintext
 
-if __name__ == '__main__':
-    cipher = VigenereCipher('CIPHER')
-
-    plaintext = 'HELLO WORLD'
-    ciphertext = cipher.encrypt(plaintext)
-    print(ciphertext)
-
-    decrypted_plaintext = cipher.decrypt(ciphertext)
-    print(decrypted_plaintext)  # output: HELLO WORLD
