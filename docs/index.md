@@ -13,21 +13,23 @@ A clean customisable Sphinx documentation theme.
 
 ```{toctree}
 :hidden:
-
 quickstart
-customisation/index
-reference/index
-recommendations
+```
+
+```{toctree}
+:caption: Methods
+:hidden:
+Affine
+Hill
+Permutation
+Shift
+Vigenere
 Playfair
 ```
 
 ```{toctree}
 :caption: Development
 :hidden:
-
 contributing/index
-kitchen-sink/index
-stability
-changelog
 license
 ```
