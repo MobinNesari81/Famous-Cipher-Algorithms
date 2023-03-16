@@ -10,7 +10,7 @@ additional-compiled-static-assets = [
 
 [project]
 name = "furo"
-description = "ImplementandenhancefamousclassiccipheralgorithmsinPythonlanguage."
+description = "Implement and enhance famous classic cipher algorithms in Python language."
 dynamic = ["version"]
 readme = "Affine.md"
 
@@ -48,4 +48,4 @@ classifiers = [
 "sphinx.html_themes" = {furo = "furo"}
 
 [project.urls]
-GitHub = "https://github.com/pradyunsg/furo"
+GitHub = "https://github.com/MobinNesari81/Famous-Cipher-Algorithms/docs"
