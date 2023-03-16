@@ -1,7 +1,5 @@
 # Permutation Cipher
 
-__Design and Develop:__ Mobin Nesari
-
 The permutation cipher is a type of encryption technique that operates by permuting the order of the plaintext characters to generate ciphertext. In other words, the permutation cipher encrypts a message by rearranging the order of the characters in the plaintext according to a predefined sequence. The security of this technique depends on the complexity of the permutation sequence used.
 
 The permutation cipher can be implemented using a variety of methods, including using a random sequence, a pre-determined sequence, or a secret key. In a pre-determined permutation sequence, the order of the characters is predetermined and is known by both the sender and receiver. The sender uses this sequence to encrypt the plaintext message, while the receiver uses it to decrypt the ciphertext message.
@@ -54,6 +52,3 @@ This will output:
 LEOHLRODWLXXX!X 
 HELLOWORLD!
 ```
-
-## License
-This repository is under the MIT license.
