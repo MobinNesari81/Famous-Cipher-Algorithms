@@ -1,7 +1,5 @@
 # Vigenère Cipher
 
-__Design and Develop:__ Mobin Nesari
-
 The Vigenère cipher is a polyalphabetic substitution cipher that was first described by Giovan Battista Bellaso in 1553. It was later misattributed to Blaise de Vigenère in the 19th century, which is where it gets its name. The Vigenère cipher is an extension of the Caesar cipher, and it is much more secure than the monoalphabetic substitution ciphers that were commonly used at the time.
 
 ## Explanation of the Vigenère Cipher
@@ -33,6 +31,3 @@ print(decrypted_plaintext)  # outputs "HELLO"
 ```
 
 First, we import the `VigenereCipher` class from the `vigenere_cipher` module. We then create a `VigenereCipher` object with a key of "KEY". We can then use the `encrypt()` method of the object to encrypt a plaintext message and the `decrypt()` method to decrypt a ciphertext message. In this example, we encrypt the plaintext message "HELLO" to produce the ciphertext message "RIJVS", and then decrypt the ciphertext message "RIJVS" to produce the original plaintext message "HELLO".
-
-## License
-This repository is under the MIT license.
