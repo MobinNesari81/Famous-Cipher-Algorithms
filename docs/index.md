@@ -18,6 +18,7 @@ quickstart
 customisation/index
 reference/index
 recommendations
+Playfair
 ```
 
 ```{toctree}
