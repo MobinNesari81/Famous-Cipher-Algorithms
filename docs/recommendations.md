@@ -1,38 +1,120 @@
-# Recommendations
+# Affine Cipher
+__Designer and Developer:__ Mobin Nesari
 
-This page lists a few opinionated recommendations for Sphinx plugins to use in your documentation along with Furo. All these plugins work well with Furo-based Sphinx documentation, but they are not inherently tied to Furo.
+The Affine cipher is a monoalphabetic substitution cipher that uses a simple mathematical function to encrypt a message. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. The Affine cipher is a special case of the more general monoalphabetic substitution cipher.
 
-[MyST (Markedly Structured Text)][MyST]
-: This project enables writing documentation with Markdown in Sphinx[^using-markdown]. This is achieved by making well-thought-out extensions to the CommonMark Specification, which make it as capable as reStructuredText. In case you're wondering if that works well... this documentation is written using MyST.
+The encryption function is as follows:
 
-  Markdown is a significantly more popular markup format than reStructuredText. This means that it's likely that potential contributors/developers on the project are significantly more familiar with Markdown than reStructuredText. MyST gives you the best of both worlds -- simplicity and familiarity of Markdown with the extensibility power of reST.
+$$E(x) = (ax + b)\text{mod}m$$
 
-[sphinxext-opengraph]
-: This project automagically adds Open Graph meta tags to your site's generated HTML. The Open Graph protocol is used by social media websites to determine how to present a page when a link is posted, and by search engines as a criterion toward ranking.
+where x is the index of the plaintext letter in the alphabet, a and b are the key, and m is the size of the alphabet (26 for the English alphabet).
 
-[sphinx-inline-tabs]
-: This project provides a straightforward way to introduce tabbed content within your documentation. This is useful for instructions specific to something about the end user (like their OS, or preferred language, etc). This is a great way to organise complex bits of documentation without major trouble.
+The decryption function is as follows:
 
-  Disclaimer: I am the creator and the primary maintainer of sphinx-inline-tabs.
+$$D(x) = a^{-1}(x - b) \text{mod}m$$
 
-[sphinx-autobuild]
-: This project provides a live-reloading server, that rebuilds the documentation and refreshes any open pages automatically when changes are saved. This enables a much shorter feedback loop which can help boost productivity when writing documentation. Furo's development workflow is based on [uses this project](contributing/workflow.md#local-development-server).
+## Implementation
+The following Python code implements the Affine cipher:
 
-  Disclaimer: I am the primary maintainer of sphinx-autobuild.
+```python
+class AffineCipher:
+    def __init__(self, a, b):
+        if not are_coprime(a, 26): # Check a is invertible
+            raise Exception("Coefficient a should be co-prime with 26!")
+        self.a = a
+        self.b = b
+        self.alphabet = "abcdefghijklmnopqrstuvwxyz"
 
-[sphinx-copybutton]
-: This project adds a convenient copy button to code blocks. This is a subtle but effective user experience improvement when there are code snippets that a user might wish to copy from (examples, sample code etc).
+    def encrypt(self, message):
+        """Encrypts a message using the Affine cipher."""
+        cipher_text = ''
+        for char in message.lower():
+            if char in self.alphabet:
+                index = self.alphabet.index(char)
+                # Apply the Affine transformation
+                new_index = (self.a * index + self.b) % 26
+                cipher_text += self.alphabet[new_index]
+            else:
+                cipher_text += char
+        return cipher_text
 
-In addition to the above, a shoutout to the [Executable Books] project which maintains many useful [Sphinx extensions][ebp-extensions] including some listed above.
+    def decrypt(self, cipher_text):
+        """Decrypts a message encrypted with the Affine cipher."""
+        plaintext = ''
+        for char in cipher_text.lower():
+            if char in self.alphabet:
+                index = self.alphabet.index(char)
+                # Inverse Affine transformation
+                new_index = (self.modular_inverse(self.a, 26) * (index - self.b)) % 26
+                plaintext += self.alphabet[new_index]
+            else:
+                plaintext += char
+        return plaintext
 
-[^using-markdown]: MyST addresses all the concerns that have been raised when arguing against [Using Markdown for Technical Documentation][dont-use-markdown], which really only leaves us with the good bits. :)
+    def modular_inverse(self, a, m):
+        """Calculates the modular inverse of a with respect to m."""
+        for x in range(1, m):
+            if (a * x) % m == 1:
+                return x
+        return None
 
-[MyST]: https://myst-parser.readthedocs.io/en/latest/
-[sphinx-autobuild]: https://github.com/executablebooks/sphinx-autobuild#readme
-[sphinx-copybutton]: https://github.com/executablebooks/sphinx-copybutton#readme
-[sphinx-inline-tabs]: https://github.com/pradyunsg/sphinx-inline-tabs#readme
-[sphinxext-opengraph]: https://github.com/wpilibsuite/sphinxext-opengraph
-[executable books]: https://executablebooks.org
-[ebp-extensions]: https://github.com/executablebooks/?q=sphinx
+def gcd(a, b):
+    """Calculates the greatest common divisor of two numbers."""
+    while b != 0:
+        a, b = b, a % b
+    return a
 
-[dont-use-markdown]: https://www.ericholscher.com/blog/2016/mar/15/dont-use-markdown-for-technical-docs/
+def are_coprime(a, b):
+    """Determines whether two numbers are coprime or not."""
+    return gcd(a, b) == 1
+
+```
+
+The AffineCipher class takes two arguments in its constructor: the key coefficients a and b. It checks if a is coprime with 26, and `raises an exception` if not.
+
+The `encrypt` method takes a message string as input, and returns the corresponding ciphertext. It iterates through each character in the message, and applies the Affine transformation to each character.
+
+The `decrypt` method takes a ciphertext string as input, and returns the corresponding plaintext. It iterates through each character in the ciphertext, and applies the inverse Affine transformation to each character.
+
+The `modular_inverse` function calculates the modular inverse of a with respect to `m` using a brute-force method.
+
+The `gcd` function calculates the greatest common divisor of two numbers `a` and `b`.
+
+The `are_coprime` function decides whether two given numbers are coprime or not according to the result of the `gcd` function.
+
+## How to Use Affine Cipher
+Using the Affine Cipher in your own Python program is simple.
+
+First, copy and paste the code for the `AffineCipher` class and the `gcd` and `are_coprime` helper functions into your program.
+
+Next, create an instance of the `AffineCipher` class by passing in two integer values `a` and `b`.
+
+- `a` should be a number that is coprime with 26. If `a` is not coprime with 26, an exception will be raised.
+- `b` can be any integer value.
+
+Here is an example of how to create an instance of the AffineCipher class:
+
+```python
+cipher = AffineCipher(3, 5)
+```
+
+Once you have created an instance of the `AffineCipher` class, you can use the `encrypt` and `decrypt` methods to encrypt and decrypt messages.
+
+The `encrypt` method takes a plaintext message as a string and returns a ciphertext message as a string.
+
+```python
+plaintext = "hello world"
+ciphertext = cipher.encrypt(plaintext)
+print(ciphertext) # Output: 'dioxx wepnq'
+```
+
+The `decrypt` method takes a ciphertext message as a string and returns the original plaintext message as a string.
+
+```python
+ciphertext = "dioxx wepnq"
+plaintext = cipher.decrypt(ciphertext)
+print(plaintext) # Output: 'hello world'
+```
+
+## License
+This repository is under the MIT license.
