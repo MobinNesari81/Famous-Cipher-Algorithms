@@ -70,7 +70,3 @@ decrypted_plaintext = cipher.decrypt(ciphertext)
 
 print(decrypted_plaintext) # prints 'HELLO'
 ```
-
-## License
-This project is licensed under the MIT License
-
