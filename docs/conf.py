@@ -14,9 +14,9 @@ sys.path.append(os.path.abspath("./kitchen-sink/demo_py"))
 # -- Project information -----------------------------------------------------
 #
 
-project = "furo"
-copyright = "2020, Pradyun Gedam"
-author = "Pradyun Gedam"
+project = "Famous Cipher Algorithms"
+copyright = "2023, Mobin Nesari & Mohammad Mehdi Begmaz"
+author = "Mobin Nesari & Mohammad Mehdi Begmaz"
 
 # -- General configuration ---------------------------------------------------
 #
@@ -72,7 +72,7 @@ myst_heading_anchors = 3
 #
 
 html_theme = "furo"
-html_title = "Furo"
+html_title = "FCA"
 language = "en"
 
 html_static_path = ["_static"]
@@ -127,8 +127,8 @@ if RTD_TESTING or "FURO_RTD_TESTING" in os.environ:
     html_context["current_version"] = "latest"
     html_context["conf_py_path"] = "/docs/"
     html_context["display_github"] = True
-    html_context["github_user"] = "pradyunsg"
-    html_context["github_repo"] = "furo"
+    html_context["github_user"] = "MobinNesari81"
+    html_context["github_repo"] = "Famous-Cipher-Algorithms"
     html_context["github_version"] = "main"
     html_context["slug"] = "furo"
 
