@@ -9,10 +9,10 @@ additional-compiled-static-assets = [
 ]
 
 [project]
-name = "furo"
-description = "A clean customisable Sphinx documentation theme."
+name = "Famous Cipher Algorithms"
+description = "ImplementandenhancefamousclassiccipheralgorithmsinPythonlanguage."
 dynamic = ["version"]
-readme = "README.md"
+readme = "Affine.md"
 
 requires-python = ">=3.7"
 dependencies = [
