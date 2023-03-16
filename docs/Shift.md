@@ -1,5 +1,4 @@
 # Shift Cipher
-__Design and Develop:__ Mobin Nesari
 
 The shift cipher, also known as the Caesar cipher, is a simple encryption technique that involves shifting the letters of a message by a certain number of positions in the alphabet. The shift value is a key that is used for both encryption and decryption.
 
@@ -95,6 +94,3 @@ Decrypted message: Hello, World!
 
 ## Limitations
 The shift cipher is a very simple encryption technique and has some limitations. For example, it can be easily broken by brute force or frequency analysis attacks. Additionally, the shift value is a weak key that can be easily guessed or discovered through trial and error. Therefore, the shift cipher is not recommended for secure communication, but can be useful for basic encryption needs or educational purposes.
-
-## License
-This repository is under the MIT license.
