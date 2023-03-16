@@ -1,5 +1,4 @@
 # Affine Cipher
-__Designer and Developer:__ Mobin Nesari
 
 The Affine cipher is a monoalphabetic substitution cipher that uses a simple mathematical function to encrypt a message. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. The Affine cipher is a special case of the more general monoalphabetic substitution cipher.
 
@@ -115,6 +114,3 @@ ciphertext = "dioxx wepnq"
 plaintext = cipher.decrypt(ciphertext)
 print(plaintext) # Output: 'hello world'
 ```
-
-## License
-This repository is under the MIT license.
