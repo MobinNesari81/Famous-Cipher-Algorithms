@@ -10,7 +10,7 @@ additional-compiled-static-assets = [
 
 [project]
 name = "furo"
-description = "A clean customisable Sphinx documentation theme."
+description = "Implement and enhance famous classic cipher algorithms in Python language."
 dynamic = ["version"]
 readme = "README.md"
 
