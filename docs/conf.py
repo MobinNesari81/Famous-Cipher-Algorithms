@@ -71,6 +71,12 @@ myst_heading_anchors = 3
 # -- Options for HTML output -------------------------------------------------
 #
 
+html_static_path = ["_static"]
+html_theme_options = {
+    "light_logo": "FAC-dark.png",
+    "dark_logo": "FAC-light.png",
+}
+
 html_theme = "furo"
 html_title = "FCA"
 language = "en"
