@@ -1,18 +1,21 @@
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
 # Affine Cipher
 
 The Affine cipher is a monoalphabetic substitution cipher that uses a simple mathematical function to encrypt a message. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. The Affine cipher is a special case of the more general monoalphabetic substitution cipher.
 
 The encryption function is as follows:
 
-```math
+```eq
 E(x) = (ax + b)\text{mod} m
 ```
+<a link >
 
 where x is the index of the plaintext letter in the alphabet, a and b are the key, and m is the size of the alphabet (26 for the English alphabet).
 
 The decryption function is as follows:
 
-```math
+```eq
 D(x) = a^{-1}(x - b) \text{mod} m
 ```
 
