@@ -1,3 +1,5 @@
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
 # Permutation Cipher
 
 The permutation cipher is a type of encryption technique that operates by permuting the order of the plaintext characters to generate ciphertext. In other words, the permutation cipher encrypts a message by rearranging the order of the characters in the plaintext according to a predefined sequence. The security of this technique depends on the complexity of the permutation sequence used.
