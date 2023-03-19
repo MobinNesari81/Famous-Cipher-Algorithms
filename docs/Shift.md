@@ -7,7 +7,8 @@ The shift cipher, also known as the Caesar cipher, is a simple encryption techni
 ## Encryption
 The encryption process for a shift cipher can be represented by the following formula:
 
-$$E(x) = (x + k) \mod 26$$
+$$E(x) = (x + k) \ \text{mod} \ 26$$
+
 where:
 - $E(x)$ is the encrypted letter.
 - $x$ is the plaintext letter, represented as a number between 0 and 25. (i.e: A=0, B=1, C=2, ..., z=25)
@@ -18,7 +19,8 @@ To encrypt a message, each letter in the plaintext is shifted by the same amount
 ## Decryption
 The decryption process for a shift cipher can be represented by the following formula:
 
-$$D(x) = (x - k) \mod 26$$
+$$D(x) = (x - k) \ \text{mod} \ 26$$
+
 where:
 - $D(x)$ is the decrypted letter.
 - $x$ is the encrypted letter, represented as a number between 0 and 25.
