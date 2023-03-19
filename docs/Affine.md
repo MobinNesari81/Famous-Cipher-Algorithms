@@ -6,10 +6,7 @@ The Affine cipher is a monoalphabetic substitution cipher that uses a simple mat
 
 The encryption function is as follows:
 
-```eq
-E(x) = (ax + b)\text{mod} m
-```
-<a link >
+$$ E(x) = (ax + b)\text{mod} m $$
 
 where x is the index of the plaintext letter in the alphabet, a and b are the key, and m is the size of the alphabet (26 for the English alphabet).
 
