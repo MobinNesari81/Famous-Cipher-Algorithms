@@ -97,8 +97,8 @@ html_theme_options: Dict[str, Any] = {
             "class": "",
         },
     ],
-    "source_repository": "https://github.com/pradyunsg/furo/",
-    "source_branch": "main",
+    "source_repository": "https://github.com/MobinNesari81/Famous-Cipher-Algorithms",
+    "source_branch": "Document",
     "source_directory": "docs/",
 }
 
