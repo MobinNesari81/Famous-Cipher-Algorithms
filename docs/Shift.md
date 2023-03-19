@@ -10,9 +10,9 @@ The encryption process for a shift cipher can be represented by the following fo
 $$E(x) = (x + k) \ \text{mod} \ 26$$
 
 where:
-- $E(x)$ is the encrypted letter.
-- $x$ is the plaintext letter, represented as a number between 0 and 25. (i.e: A=0, B=1, C=2, ..., z=25)
-- $k$ is the shift value, represented as a number between 0 and 25.
+- E(x) is the encrypted letter.
+- x is the plaintext letter, represented as a number between 0 and 25. (i.e: A=0, B=1, C=2, ..., z=25)
+- k is the shift value, represented as a number between 0 and 25.
 
 To encrypt a message, each letter in the plaintext is shifted by the same amount specified by the shift value. For example, if the shift value is 3, then the letter 'A' becomes 'D', 'B' becomes 'E', and so on.
 
@@ -22,9 +22,9 @@ The decryption process for a shift cipher can be represented by the following fo
 $$D(x) = (x - k) \ \text{mod} \ 26$$
 
 where:
-- $D(x)$ is the decrypted letter.
-- $x$ is the encrypted letter, represented as a number between 0 and 25.
-- $k$ is the shift value, represented as a number between 0 and 25
+- D(x) is the decrypted letter.
+- x is the encrypted letter, represented as a number between 0 and 25.
+- k is the shift value, represented as a number between 0 and 25
 
 To decrypt a message, each letter in the encrypted message is shifted back by the same amount specified by the shift value. For example, if the shift value is 3, then the letter 'D' becomes 'A', 'E' becomes 'B', and so on.
 
