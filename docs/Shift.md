@@ -1,3 +1,5 @@
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
 # Shift Cipher
 
 The shift cipher, also known as the Caesar cipher, is a simple encryption technique that involves shifting the letters of a message by a certain number of positions in the alphabet. The shift value is a key that is used for both encryption and decryption.
