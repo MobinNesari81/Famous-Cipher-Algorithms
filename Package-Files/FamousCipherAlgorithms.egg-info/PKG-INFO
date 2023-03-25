@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: FamousCipherAlgorithms
+Version: 0.1.4
+Summary: Famous Cipher Algorithms
+Home-page: https://famous-cipher-algorithm.readthedocs.io/en/latest/index.html
+Author: Mobin Nesari
+Author-email: mobinnesari81@gmail.com
+License: UNKNOWN
+Keywords: Python,Cipher,Cryptography,Algorithms
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+License-File: LICENSE
+
+FamousCipherAlgorithms is a Python package for implementing a variety of cryptographic ciphers and encryption methods, designed to provide secure and reliable data protection.
+

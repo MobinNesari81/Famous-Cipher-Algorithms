@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "FamousCipherAlgorithms"
+version = "0.1.1"
+authors = [
+  { name="Mobin Nesari", email="mobinnesari81@gmail.com" },
+  { name="Mohammad Mehdi Begmaz", email="mohammadmehdi.begmaz@gmail.com"}
+]
+maintainers =[
+    { name="Mobin Nesari", email="mobinnesari@gmail.com"},
+    { name="Mohammad Mehdi Begmaz", email="mohammadmehdi.begmaz@gmail.com"},
+]
+description = "FamousCipherAlgorithms is a Python package for implementing a variety of cryptographic ciphers and encryption methods, designed to provide secure and reliable data protection."
+readme = "README.md"
+keywords = ["Cryptography", "Cipher", "Encrypt", "Decrypt", "Algorithms"]
+dependencies = [
+  "numpy<=1.21.5",
+]
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+
+[project.urls]
+"Repository" = "https://github.com/MobinNesari81/Famous-Cipher-Algorithms"
+"Documentation" = "https://famous-cipher-algorithm.readthedocs.io/en/latest/index.html"
