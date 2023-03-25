@@ -68,6 +68,9 @@ class Playfair:
             else:
                 answer.append(msg[i] + 'x')
                 i += 1
+        if i == len(msg) - 1:
+            answer.append(msg[i] + 'x')
+        print("parser result:", answer)
         return answer
     
     def get_next_chars(self, chars: str) -> str:
@@ -103,8 +106,8 @@ class Playfair:
         
         elif p1[1] == p2[1]:
             # Same column
-            answer += self.coder_table[p1[0] + 1 % 5][p1[1]]
-            answer += self.coder_table[p2[0] + 1 % 5][p2[1]]
+            answer += self.coder_table[(p1[0] + 1) % 5][p1[1]]
+            answer += self.coder_table[(p2[0] + 1) % 5][p2[1]]
         
         else:
             # Square format
@@ -148,8 +151,8 @@ class Playfair:
         
         elif p1[1] == p2[1]:
             # Same column
-            answer += self.coder_table[p1[0] - 1 % 5][p1[1]]
-            answer += self.coder_table[p2[0] - 1 % 5][p2[1]]
+            answer += self.coder_table[(p1[0] - 1) % 5][p1[1]]
+            answer += self.coder_table[(p2[0] - 1) % 5][p2[1]]
         
         else:
             # Square format
@@ -173,6 +176,7 @@ class Playfair:
         """
         answer = ""
         msg = msg.lower()
+        msg = msg.replace(' ', '')
         msg_parsed = self.msg_parser(msg)
         for section in msg_parsed:
             answer += self.get_next_chars(section)

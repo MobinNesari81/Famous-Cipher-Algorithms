@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "FamousCipherAlgorithms"
-version = "0.1.1"
+version = "0.1.2"
 authors = [
   { name="Mobin Nesari", email="mobinnesari81@gmail.com" },
   { name="Mohammad Mehdi Begmaz", email="mohammadmehdi.begmaz@gmail.com"}
