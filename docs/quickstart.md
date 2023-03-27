@@ -1,6 +1,6 @@
 # Quickstart
 
-###### Tutorial written by <a href="https://www.linkedin.com/in/mobin-nesari/">Mobin Nesari</a>
+<h5> Tutorial written by <a href="https://www.linkedin.com/in/mobin-nesari/">Mobin Nesari</a> </h5>
 
 In this tutorial, we are going to install `FamousCipherAlgorithms` package and use it with some testcases.
 
