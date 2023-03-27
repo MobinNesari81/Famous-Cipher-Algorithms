@@ -18,3 +18,8 @@ find these resources or code useful in your work, please consider citing
 the following source:
 
    `Mobin Nesari, Mohammad M. Begmaz`__
+
+.. note::
+  This tutorial is a static non-editable version. Interactive, editable versions are available via the following links:
+    * `Google Colab <https://colab.research.google.com/github/jeshraghian/snntorch/blob/master/examples/quickstart.ipynb>`_
+    * `Local Notebook (download via GitHub) <https://github.com/jeshraghian/snntorch/tree/master/examples>`_
