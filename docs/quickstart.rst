@@ -1,11 +1,20 @@
-# Quickstart
+=============
+Quickstart 
+=============
+
+Tutorial written by Jason K. Eshraghian (`www.jasoneshraghian.com <https://www.jasoneshraghian.com>`_)
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
         :alt: Open In Colab
         :target: https://colab.research.google.com/github/jeshraghian/snntorch/blob/master/examples/quickstart.ipynb
 
+For a comprehensive overview on how SNNs work, and what is going on
+under the hood, `then you might be interested in the snnTorch tutorial
+series available
 
-```{include} ../README.md
-:start-after: <!-- start quickstart -->
-:end-before: <!-- end quickstart -->
-```
+here. <https://snntorch.readthedocs.io/en/latest/tutorials/index.html>`__
+The snnTorch tutorial series is based on the following paper. If you
+find these resources or code useful in your work, please consider citing
+the following source:
+
+   `Mobin Nesari, Mohammad M. Begmaz`__
