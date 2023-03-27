@@ -42,6 +42,7 @@ Permutation
 Shift
 Vigenere
 Playfair
+RailFenceCipher
 ```
 
 ```{toctree}
