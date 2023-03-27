@@ -8,8 +8,8 @@ In this tutorial, we are going to install `FamousCipherAlgorithms` package and u
 <p class="admonition-title">Note</p>
 <dl class="simple">
 <dt>This tutorial is a static non-editable version. Interactive, editable versions are available via the following links:</dt><dd><ul class="simple">
-<li><p><a class="reference external" href="https://colab.research.google.com/github/jeshraghian/snntorch/blob/master/examples/quickstart.ipynb">Google Colab</a></p></li>
-<li><p><a class="reference external" href="https://github.com/jeshraghian/snntorch/tree/master/examples">Local Notebook (download via GitHub)</a></p></li>
+<li><p><a class="reference external" href="https://colab.research.google.com/github/MobinNesari81/Famous-Cipher-Algorithms/blob/main/Notebooks/Quickstart.ipynb">Google Colab</a></p></li>
+<li><p><a class="reference external" href="https://github.com/MobinNesari81/Famous-Cipher-Algorithms/blob/main/Notebooks/Quickstart.ipynb">Local Notebook (download via GitHub)</a></p></li>
 </ul>
 </dd>
 </dl>
