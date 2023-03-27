@@ -1,5 +1,4 @@
 # Rail Fence Cipher
-__Designer and Developer:__ Mobin Nesari
 
 The Rail Fence Cipher is a transposition cipher that encrypts plaintext by writing it diagonally on a set number of rails, and then reading off the ciphertext from the rows.
 
