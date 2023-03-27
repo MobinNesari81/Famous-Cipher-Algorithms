@@ -70,7 +70,6 @@ class Playfair:
                 i += 1
         if i == len(msg) - 1:
             answer.append(msg[i] + 'x')
-        print("parser result:", answer)
         return answer
     
     def get_next_chars(self, chars: str) -> str:
