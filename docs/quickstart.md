@@ -1,7 +1,6 @@
-[<img src='https://github.com/MobinNesari81/Famous-Cipher-Algorithms/tree/main/Logos/FCA-light.svg' width="300">](https://github.com/MobinNesari81/Famous-Cipher-Algorithms)
 # Quickstart
 
-### Tutorial written by <a href="https://www.linkedin.com/in/mobin-nesari/">Mobin Nesari</a>
+###### Tutorial written by <a href="https://www.linkedin.com/in/mobin-nesari/">Mobin Nesari</a>
 
 In this tutorial, we are going to install `FamousCipherAlgorithms` package and use it with some testcases.
 
