@@ -5,7 +5,7 @@ hide-toc: true
 # Famous Cipher Algorithms
 
 
-<a class="reference external image-reference" href="https://pypi.python.org/pypi/FamousCipherAlgorithms"><img alt="https://img.shields.io/pypi/v/snntorch.svg" src="https://img.shields.io/pypi/v/snntorch.svg" /></a>
+[![PyPI version](https://badge.fury.io/py/FamousCipherAlgorithms.png)](https://badge.fury.io/py/FamousCipherAlgorithms)
 
 <div class="sidebar-logo-container">
   <img class="sidebar-logo only-light" src="_static/FAC-light.png" alt="Light Logo" style="width: 450px; padding: 25px;"/>
@@ -20,6 +20,10 @@ FamousCipherAlgorithms is a Python package that implements several classic ciphe
 - Playfair
 - Vigenere
 - Rail Fence
+- Columnar Transposition
+- One Time Pad
+- Polybius Square
+- ADFGVX
 
 ## Installation
 The package can be easily installed using pip:
@@ -69,6 +73,10 @@ Shift
 Vigenere
 Playfair
 RailFenceCipher
+CT
+OTP
+Polybius
+ADFGVX
 ```
 
 ```{toctree}
