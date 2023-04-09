@@ -5,3 +5,7 @@ from .Playfair import Playfair
 from .Shift import ShiftCipher
 from .Vigenere import VigenereCipher
 from .RailFence import RailFenceCipher
+from .ADFGVX import ADFGVXCipher
+from .Columnar import ColumnarTranspositionCipher
+from .OneTimePad import OneTimePad
+from .Polybius import PolybiusSquareCipher

@@ -1,41 +1,49 @@
-# FamousCipherAlgorithms (FCA) Package
-FamousCipherAlgorithms is a Python package for implementing a variety of cryptographic ciphers and encryption methods, designed to provide secure and reliable data protection.
+# Famous Cipher Algorithms
+<img src="https://github.com/MobinNesari81/Famous-Cipher-Algorithms/blob/main/Logos/FCA-light.svg?raw=true" align='center'>
+
+[![PyPI version](https://badge.fury.io/py/FamousCipherAlgorithms.png)](https://badge.fury.io/py/FamousCipherAlgorithms)
+
+FamousCipherAlgorithms is a Python package that implements several classic cipher algorithms. The package currently includes the following algorithms:
+- Affine
+- Shift
+- Hill
+- Permutation
+- Playfair
+- Vigenere
+- Rail Fence
+- Columnar Transposition
+- One Time Pad
+- Polybius Square
+- ADFGVX
 
 ## Installation
-The easiest way to install FamousCipherAlgorithms is using `pip`. First, make sure that you have `pip` installed on your system.
-
-To To install FamousCipherAlgorithms using `pip`, simply run the following command in your terminal:
-
-```terminal
-pip install -i https://test.pypi.org/simple/ FamousCipherAlgorithms==0.1.0
+The package can be easily installed using pip:
 ```
-This will install the latest version of FamousCipherAlgorithms and all of its dependencies.
-
-Test installation by
-```python
-import FamousCipherAlgorithms as FCA
+pip install FamousCipherAlgorithms
 ```
+
+## Usage
+You can import `FamousCipherAlgorithms` in two ways:
+1. Import entire package
+    ```python
+    import FamousCipherAlgorithms as FCA
+    ```
+2. Import specific algorithms
+    ```python
+    from FamousCipherAlgorithms import AffineCipher, ShiftCipher
+    ```
+
+## Requirements
+- `Python >= 3.9`
+- `NumPy <= 1.21.5`
+
+## Documentation
+Detailed documentation for each algorithm is available in the <a href="https://famous-cipher-algorithm.readthedocs.io/en/latest/index.html"> document</a>.
+
+## Contributing
+Contributions are always welcome! If you have any suggestions, bug reports, or pull requests, please feel free to open an issue on GitHub.
 
 ## License
-MIT License
+This package is licensed under the MIT license. See the <a href="https://github.com/MobinNesari81/Famous-Cipher-Algorithms/blob/main/LICENSE">LICENSE</a> file for more details.
 
-Copyright (c) 2023 Mobin Nesari
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
+Copyright © 2023, <a href="https://www.linkedin.com/in/mobin-nesari/">Mobin Nesari</a> & <a href="https://www.linkedin.com/in/mohammad-mahdi-begmaz-69665a243/">Mohammad Mehdi Begmaz</a>
