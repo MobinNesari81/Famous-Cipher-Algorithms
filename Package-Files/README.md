@@ -1,7 +1,7 @@
 # Famous Cipher Algorithms
 <img src="https://github.com/MobinNesari81/Famous-Cipher-Algorithms/blob/main/Logos/FCA-light.svg?raw=true" align='center'>
 
-![PyPI](https://badge.fury.io/py/FamousCipherAlgorithms)
+[![PyPI version](https://badge.fury.io/py/FamousCipherAlgorithms.png)](https://badge.fury.io/py/FamousCipherAlgorithms)
 
 FamousCipherAlgorithms is a Python package that implements several classic cipher algorithms. The package currently includes the following algorithms:
 - Affine
@@ -11,6 +11,10 @@ FamousCipherAlgorithms is a Python package that implements several classic ciphe
 - Playfair
 - Vigenere
 - Rail Fence
+- Columnar Transposition
+- One Time Pad
+- Polybius Square
+- ADFGVX
 
 ## Installation
 The package can be easily installed using pip:
