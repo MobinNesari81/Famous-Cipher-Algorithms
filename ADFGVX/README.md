@@ -93,3 +93,6 @@ Plain Text: HELLO WORLD
 Cipher Text: AXADGGGGVFVXVFAFGGFF
 Decrypted Text: HELLOWORLD
 ```
+
+## References
+- <a href="https://en.wikipedia.org/wiki/ADFGVX_cipher"> Wikipedia: ADFGVX Cipher</a>

@@ -91,7 +91,7 @@ HELLOWORLD
 The Polybius Square Cipher is a substitution cipher that replaces each letter with a pair of numbers representing its row and column in a predetermined grid. Its strength lies in the fact that it is more complex than a simple Caesar cipher and can withstand frequency analysis attacks. However, it has several weaknesses such as the limited number of characters that can be represented in the grid, making it vulnerable to brute force attacks, and the lack of a provision for key management, which makes it susceptible to known plaintext attacks. Additionally, if the grid is discovered, the cipher can be easily broken.
 
 ## Usage
-The `PolybiusSquareCipher` class in this module can be used to encrypt and decrypt messages using the Polybius Square Cipher. To use it, simply create a new instance of the class with a key specifying the number of rails to use, and then call the `encrypt()` or `decrypt()` method with the plaintext or ciphertext respectively.
+The `PolybiusSquareCipher` class in this module can be used to encrypt and decrypt messages using the Polybius Square Cipher. To use it, simply create a new instance of the class with a key, and then call the `encrypt()` or `decrypt()` method with the plaintext or ciphertext respectively.
 
 ```python
 import FamousCipherAlgorithms as FCA

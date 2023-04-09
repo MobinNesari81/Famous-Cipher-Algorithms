@@ -37,7 +37,7 @@ Ciphertext: ATAATTKCDKANW
 One of the strengths of Columnar Transposition Cipher is that it is relatively easy to understand and implement. It can be used to quickly encrypt messages and, when combined with other encryption techniques, can provide a basic level of security. However, one of its weaknesses is that it is vulnerable to frequency analysis attack, where an attacker can use statistical methods to analyze the frequency of letters in the ciphertext and deduce the original plaintext. Additionally, it does not provide any form of message authentication, which means it is susceptible to message tampering or forgery. Overall, while Columnar Transposition Cipher can be useful in certain contexts, it should not be relied upon as the sole method of encryption for sensitive information.
 
 ## Usage
-The `ColumnarTranspositionCipher` class in this module can be used to encrypt and decrypt messages using the Columnar Transposition Cipher. To use it, simply create a new instance of the class with a key specifying the number of rails to use, and then call the `encrypt()` or `decrypt()` method with the plaintext or ciphertext respectively.
+The `ColumnarTranspositionCipher` class in this module can be used to encrypt and decrypt messages using the Columnar Transposition Cipher. To use it, simply create a new instance of the class with a key, and then call the `encrypt()` or `decrypt()` method with the plaintext or ciphertext respectively.
 
 ```python
 import FamousCipherAlgorithms as FCA

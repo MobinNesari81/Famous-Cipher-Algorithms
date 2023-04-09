@@ -79,7 +79,7 @@ The resulting plaintext is `HELLO`.
 One-time pad cipher algorithm is known for its strength in terms of providing perfect secrecy, making it virtually impossible to crack the encrypted message without having access to the secret key. The algorithm uses a random key that is as long as the plaintext, which means that the ciphertext provides no information about the original message unless the key is known. However, the main weakness of the one-time pad cipher algorithm lies in the distribution and management of the secret key. The key must be shared securely between the sender and the recipient, and it can only be used once. Also, generating truly random keys can be challenging, and any errors in the key can lead to incorrect decryption of the message. Additionally, the key must be kept secure at all times, otherwise, anyone who gets hold of it can easily decrypt the messages.
 
 ## Usage
-The `OneTimePad` class in this module can be used to encrypt and decrypt messages using the Rail Fence Cipher. To use it, simply create a new instance of the class with a key specifying the number of rails to use, and then call the `encrypt()` or `decrypt()` method with the plaintext or ciphertext respectively.
+The `OneTimePad` class in this module can be used to encrypt and decrypt messages using the One-Time Pad Cipher. To use it, simply create a new instance of the class and an auto generated key, and then call the `encrypt()` or `decrypt()` method with the plaintext or ciphertext respectively.
 
 ```python
 import FamousCipherAlgorithms as FCA
