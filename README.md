@@ -4,13 +4,12 @@
 ![PyPI](https://badge.fury.io/py/FamousCipherAlgorithms)
 
 FamousCipherAlgorithms is a Python package that implements several classic cipher algorithms. The package currently includes the following algorithms:
-- Affine
-- Shift
-- Hill
-- Permutation
-- Playfair
-- Vigenere
-- Rail Fence
+- [Affine](./Affine/README.md)
+- [Shift](./Shift/README.md)
+- [Hill](./Hill/README.md)
+- [Permutation](./Permutation/README.md)
+- [Vigenere](./Vigenere/README.md)
+- [Rail Fence](./RailFence/README.md)
 
 ## Installation
 The package can be easily installed using pip:
