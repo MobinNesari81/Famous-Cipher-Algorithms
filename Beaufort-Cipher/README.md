@@ -1,5 +1,5 @@
 # Beaufort Cipher
-The Beaufort cipher is a type of polyalphabetic substitution ciphe. It is similar in structure to
+The Beaufort cipher is a type of polyalphabetic substitution cipher. It is similar in structure to
 the Vigenère cipher, but uses a slightly modified enciphering mechanism.
 
 ## What is the Beaufort Cipher?
@@ -28,15 +28,17 @@ b e a u f o r t    ->   - 1   4   0   20  5   14  17  19
                           B   E   P   N   Z   D   L   P
 ```
 
-// add picture
-The ciphertext can be generated using the table above as well. If the example
+<img src="Beaufort Table Guide.jpg?raw=true" align="center" height=500 width=500>
+
+The ciphertext can be generated using the table above as well. If the letter 'r' is chosen with the key 'C', we first find 'r' in the first row
+and then we find the letter 'C' from the column below it. The row where 'C' is located is 'L' in this case, which means the cipher letter will be L.
 
 The decryption process is the exact same as the encryption process. The key is used to 
 generate a new string with the same length as the ciphertext, and the same process of finding 
 the difference between the key and the chosen letter is applied here.
 
 ## Usage
-```
+```python
 from beaufort_cipher import BeaufortCipher
 
 # Instantiate a Beaufort Cipher object with a key
@@ -50,3 +52,12 @@ print(encrypted_text)
 decrypted_text = cipher.decrypt(encrypted_text)
 print(decrypted_text)
 ```
+
+The result will be:
+```
+EABDZPQVDK
+helloworld
+```
+
+## References
+- <a href="https://en.wikipedia.org/wiki/Beaufort_cipher"> Wikipedia: Beaufort Cipher</a>
