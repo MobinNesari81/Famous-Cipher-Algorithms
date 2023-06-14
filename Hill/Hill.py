@@ -1,4 +1,6 @@
+from typing import List
 import numpy as np
+
 
 class HillCipher:
     """
@@ -18,7 +20,7 @@ class HillCipher:
             Decrypts a ciphertext message using the Hill Cipher algorithm.
             Returns the plaintext message.
     """
-    def __init__(self, key):
+    def __init__(self, key: List[List[int]]) -> None:
         """
         Initializes the HillCipher object.
         
@@ -26,11 +28,11 @@ class HillCipher:
             key (list): A list of lists representing the key matrix.
                         The key matrix should be a square matrix of size n x n where n is the length of the key.
         """
-        self.key = np.array(key) # key is a square matrix of size n x n where n is the length of the key
+        self.key = np.array(key)  # key is a square matrix of size n x n where n is the length of the key
         self.n = len(key)
-        self.modulus = 26 # we're working with mod 26 arithmetic for the English alphabet
+        self.modulus = 26  # we're working with mod 26 arithmetic for the English alphabet
     
-    def encrypt(self, plaintext):
+    def encrypt(self, plaintext: str) -> str:
         """
         Encrypts a plaintext message using the Hill Cipher algorithm.
         
@@ -53,7 +55,6 @@ class HillCipher:
         
         # encrypt each block of plaintext using the key matrix
         ciphertext_letters = []
-        ciphertext_blocks = []
         for block in plaintext_blocks:
             block_matrix = np.array([ord(char) - ord('A') for char in block]).reshape(-1, 1)
             ciphertext_matrix = (self.key @ block_matrix) % self.modulus
@@ -64,7 +65,7 @@ class HillCipher:
         ciphertext = ''.join(ciphertext_letters)
         return ciphertext
     
-    def decrypt(self, ciphertext):
+    def decrypt(self, ciphertext: str) -> str:
         """
         Decrypts a ciphertext message using the Hill Cipher algorithm.
         
@@ -90,8 +91,7 @@ class HillCipher:
             plaintext_matrix = (key_inv @ block_matrix) % self.modulus
             for num in plaintext_matrix.flatten():
                 plaintext_blocks.append(chr(num + ord('A')))
-        
-        
+
         # concatenate the decrypted blocks and return the plaintext
         plaintext = ''.join(plaintext_blocks)
         return plaintext
@@ -102,6 +102,6 @@ if __name__ == '__main__':
     cipher = HillCipher(key)
     plaintext = 'HELLO WORLD'
     ciphertext = cipher.encrypt(plaintext)
-    print(ciphertext) # prints 'CFKMU'
+    print(ciphertext)  # prints 'CFKMU'
     decrypted_plaintext = cipher.decrypt(ciphertext)
-    print(decrypted_plaintext) # prints 'HELLO'
+    print(decrypted_plaintext)  # prints 'HELLO'

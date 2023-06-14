@@ -1,5 +1,8 @@
+from typing import Tuple
+
+
 class PolybiusSquareCipher:
-    def __init__(self):
+    def __init__(self) -> None:
         """
         Initializes an instance of the PolybiusSquareCipher class with a 5x5 square
         containing the letters A to Z except J where I is used instead.
@@ -49,7 +52,7 @@ class PolybiusSquareCipher:
             i += 2
         return plaintext
     
-    def find_char(self, char: str) -> tuple:
+    def find_char(self, char: str) -> Tuple[int, int]:
         """
         Finds the row and column of a given character in the Polybius square.
 

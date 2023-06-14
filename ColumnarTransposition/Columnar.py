@@ -1,5 +1,6 @@
+
 class ColumnarTranspositionCipher:
-    def __init__(self, key: str):
+    def __init__(self, key: str) -> None:
         """
         Constructor method to initialize an instance of ColumnarTranspositionCipher with a key.
 

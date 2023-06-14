@@ -17,7 +17,7 @@ class ShiftCipher:
 
     """
 
-    def __init__(self, shift: int):
+    def __init__(self, shift: int) -> None:
         """
         Initializes a new instance of the ShiftCipher class with the given shift value.
 

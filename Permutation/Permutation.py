@@ -1,3 +1,6 @@
+from typing import List
+
+
 class PermutationCipher:
     """
     A class that implements a permutation cipher.
@@ -23,7 +26,7 @@ class PermutationCipher:
             Decrypts the given ciphertext using the permutation cipher.
     """
     
-    def __init__(self, key: list):
+    def __init__(self, key: List[int]) -> None:
         self.key = key
         self.key_size = len(self.key)
     
@@ -43,7 +46,6 @@ class PermutationCipher:
         plaintext = plaintext.upper()
         words = plaintext.split()
         plaintext = "".join(words)
-        cipher_text = ""
         sections = []
         for i in range(0, len(plaintext), self.key_size):
             sections.append(plaintext[i:i+self.key_size])
@@ -52,11 +54,9 @@ class PermutationCipher:
         encrypted_sections = [self.permute(section) for section in sections]
         return "".join(encrypted_sections)
     
-    def decrypt(self, cipher_text):
-        plaintext = [""] * len(cipher_text)
+    def decrypt(self, cipher_text: str) -> str:
         sections = []
         for i in range(0, len(cipher_text), self.key_size):
             sections.append(cipher_text[i:i+self.key_size])
         decrypted_sections = [self.inv_permute(section) for section in sections]
         return "".join(decrypted_sections)
-
