@@ -1,8 +1,9 @@
+
 class RailFenceCipher:
     """
     A class that implements the rail fence cipher encryption and decryption.
     """
-    def __init__(self, key: int):
+    def __init__(self, key: int) -> None:
         """
         Initializes an instance of the RailFenceCipher class.
 
@@ -21,8 +22,7 @@ class RailFenceCipher:
         Returns:
             str: The encrypted ciphertext.
         """
-        rail = [['\n' for i in range(len(plaintext))]
-                  for j in range(self.key)]
+        rail = [['\n' for _ in range(len(plaintext))] for _ in range(self.key)]
         
         dir_down = False
         row, col = 0, 0
@@ -57,8 +57,7 @@ class RailFenceCipher:
         Returns:
             str: The decrypted plaintext.
         """
-        rail = [['\n' for i in range(len(ciphertext))]
-                  for j in range(self.key)]
+        rail = [['\n' for _ in range(len(ciphertext))] for _ in range(self.key)]
 
         dir_down = None
         row, col = 0, 0
@@ -80,7 +79,7 @@ class RailFenceCipher:
         index = 0
         for i in range(self.key):
             for j in range(len(ciphertext)):
-                if ((rail[i][j] == '*') and (index < len(ciphertext))):
+                if (rail[i][j] == '*') and (index < len(ciphertext)):
                     rail[i][j] = ciphertext[index]
                     index += 1
 

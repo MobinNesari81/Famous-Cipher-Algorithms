@@ -1,12 +1,13 @@
+
 class AffineCipher:
-    def __init__(self, a, b):
-        if not are_coprime(a, 26): # Check a is invertible
+    def __init__(self, a: int, b: int) -> None:
+        if not are_coprime(a, 26):  # Check a is invertible
             raise Exception("Coefficient a should be co-prime with 26!")
         self.a = a
         self.b = b
         self.alphabet = "abcdefghijklmnopqrstuvwxyz"
 
-    def encrypt(self, message):
+    def encrypt(self, message: str) -> str:
         """Encrypts a message using the Affine cipher."""
         cipher_text = ''
         for char in message.lower():
@@ -19,7 +20,7 @@ class AffineCipher:
                 cipher_text += char
         return cipher_text
 
-    def decrypt(self, cipher_text):
+    def decrypt(self, cipher_text: str) -> str:
         """Decrypts a message encrypted with the Affine cipher."""
         plaintext = ''
         for char in cipher_text.lower():
@@ -32,20 +33,21 @@ class AffineCipher:
                 plaintext += char
         return plaintext
 
-    def modular_inverse(self, a, m):
+    def modular_inverse(self, a: int, m: int) -> int | None:
         """Calculates the modular inverse of a with respect to m."""
         for x in range(1, m):
             if (a * x) % m == 1:
                 return x
         return None
 
-def gcd(a, b):
+
+def gcd(a: int, b: int) -> int:
     """Calculates the greatest common divisor of two numbers."""
     while b != 0:
         a, b = b, a % b
     return a
 
-def are_coprime(a, b):
+
+def are_coprime(a: int, b: int) -> int:
     """Determines whether two numbers are coprime or not."""
     return gcd(a, b) == 1
-

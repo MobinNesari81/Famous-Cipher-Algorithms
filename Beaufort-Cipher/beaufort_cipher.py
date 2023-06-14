@@ -12,21 +12,19 @@ class BeaufortCipher:
 
     ALPHABET_SIZE = 26
 
-    def __init__(self, key: str):
+    def __init__(self, key: str) -> None:
         self._key = key.lower()
         self._key_array = []
         self.set_key(self._key)
 
-
-    def get_key(self):
+    def get_key(self) -> str:
         """
         Returns:
         A String representing the key.
         """
         return self._key.upper()
 
-
-    def set_key(self, key: str):
+    def set_key(self, key: str) -> None:
         """
         Takes a string and sets it as key.
 
@@ -38,9 +36,8 @@ class BeaufortCipher:
         else:
             raise Exception("Invalid Key")
 
-
     @staticmethod
-    def is_key_valid(key: str):
+    def is_key_valid(key: str) -> bool:
         """
         Takes a string representing the key and verifies it for the Beaufort Cipher.
 
@@ -53,8 +50,7 @@ class BeaufortCipher:
 
         return re.match("^[a-z]+$", key) is not None
 
-
-    def encrypt(self, plaintext: str):
+    def encrypt(self, plaintext: str) -> str:
         """
         Takes a string message and enciphers it using the Beaufort cipher.
 
@@ -79,8 +75,7 @@ class BeaufortCipher:
 
         return ciphertext.upper()
 
-
-    def decrypt(self, ciphertext: str):
+    def decrypt(self, ciphertext: str) -> str:
         """
         Takes a string message and deciphers it using the Beaufort cipher.
 

@@ -1,7 +1,9 @@
+from typing import List, Tuple
 import random
 
+
 class ADFGVXCipher:
-    def __init__(self, key):
+    def __init__(self, key: str) -> None:
         """
         Initializes an instance of the ADFGVX Cipher class.
 
@@ -16,7 +18,7 @@ class ADFGVXCipher:
         self.adfgvx = "ADFGVX"
         self.substitution_table = self.generate_substitution_table()
 
-    def generate_substitution_table(self):
+    def generate_substitution_table(self) -> List[List[str]]:
         """
         Generates a 6x6 substitution table based on the encryption key.
 
@@ -38,7 +40,7 @@ class ADFGVXCipher:
             table[row][col] = char
         return table
 
-    def encrypt(self, plaintext):
+    def encrypt(self, plaintext: str) -> str:
         """
         Encrypts the given plaintext using the ADFGVX Cipher algorithm.
 
@@ -56,7 +58,7 @@ class ADFGVXCipher:
             ciphertext += adfgvx_char
         return ciphertext
 
-    def decrypt(self, ciphertext):
+    def decrypt(self, ciphertext: str) -> str:
         """
         Decrypts the given ciphertext using the ADFGVX Cipher algorithm.
 
@@ -74,7 +76,7 @@ class ADFGVXCipher:
             plaintext += self.substitution_table[row][col]
         return plaintext
 
-    def find_in_table(self, char):
+    def find_in_table(self, char: str) -> Tuple[int, int]:
         """
         Finds the position of a given character in the substitution table.
 
@@ -88,4 +90,3 @@ class ADFGVXCipher:
             for col in range(6):
                 if self.substitution_table[row][col] == char:
                     return row, col
-

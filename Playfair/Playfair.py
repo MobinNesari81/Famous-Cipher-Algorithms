@@ -1,3 +1,5 @@
+from typing import List
+
 
 class Playfair:
     """
@@ -10,7 +12,7 @@ class Playfair:
     def __init__(self, key: str) -> None:
         self.key = key.lower()
         self.alphabets = list("abcdefghklmnopqrstuvwxyz".strip())
-        self.alphabets.insert(8,"i/j")
+        self.alphabets.insert(8, "i/j")
         if len(set(list(self.key.strip()))) != len(self.key):
             raise Exception("Key should contains unique values")
         if 'i' in self.key and 'j' in self.key:
@@ -44,13 +46,13 @@ class Playfair:
         """
         Prints the coder table to the console.
         """
-        for i in range (5):
-            for j in range (5):
+        for i in range(5):
+            for j in range(5):
                 print(self.coder_table[i][j] + '  ', end='')
             print("\n")
         print(end='\n')
     
-    def msg_parser(self, msg: str) -> list:
+    def msg_parser(self, msg: str) -> List[str]:
         """
         Splits the message into bigrams.
 
@@ -85,12 +87,12 @@ class Playfair:
         answer = ""
         c1 = chars[0]
         c2 = chars[1]
-        if c1 == 'i' or c1 =='j':
+        if c1 == 'i' or c1 == 'j':
             c1 = 'i/j'
-        if c2 == 'i' or c2 =='j':
+        if c2 == 'i' or c2 == 'j':
             c2 = 'i/j'
-        p1 = (0,0)
-        p2 = (0,0)
+        p1 = (0, 0)
+        p2 = (0, 0)
         for i in range(5):
             for j in range(5):
                 if c1 == self.coder_table[i][j]:
@@ -130,12 +132,12 @@ class Playfair:
         answer = ""
         c1 = chars[0]
         c2 = chars[1]
-        if c1 == 'i' or c1 =='j':
+        if c1 == 'i' or c1 == 'j':
             c1 = 'i/j'
-        if c2 == 'i' or c2 =='j':
+        if c2 == 'i' or c2 == 'j':
             c2 = 'i/j'
-        p1 = (0,0)
-        p2 = (0,0)
+        p1 = (0, 0)
+        p2 = (0, 0)
         for i in range(5):
             for j in range(5):
                 if c1 == self.coder_table[i][j]:
